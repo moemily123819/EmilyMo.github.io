@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
+<html lang="en-us">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="UTF-8">
+  <title>Emily Mo's Bio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  	<!-- Button to go up -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+	<script>
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+				document.getElementById("myBtn").style.display = "block";
+				} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+	}
+
+		function topFunction() {
+			document.body.scrollTop = 30;
+			document.documentElement.scrollTop = 30;
+	}
+	</script>
+
+
+  <main class="container container-border">
+    <h1>Emily Mo's Bio</h1>
+
+    <section id="main-bio">
+      <section id="figure">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="bio-image" src="static/images/me.png" alt="Emily Mo">
+          </div>
+          <div class ="col-md-8" id="contact-info">
+            <h3><Strong>Contact Info</Strong></h3>
+            <ul>
+              <li><strong>Email:</strong> <a href="#">moemily@bellsouth.net</a></li>
+              <li><strong>Github:</strong> <a href="https://github.com/moemily123819/data_analytics_projects" target="_blank">https://github.com/moemily123819/data_analytics_projects</a></li>
+              <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/emily-mo-miami/" target="_blank">https://www.linkedin.com/in/emily-mo-miami/</a></li>
+            </ul>
+            <br>
+            <div id="self-desc">
+                <p>A self-motivated, self-disciplined core banking software consultant turned data analyst seeking an opportunity 
+                  to use my knowledge to  gather, transform, analyze, interpret, present and visualize data for a company to grow, 
+                  expand, formulate and strategize company’s mission and values.
+                </p>
+            </div>  
+    
+          </div>
+            <br>
+            <br>
+        </div>
+        <div class="row" id='skills'>
+          <h4><Strong>Skills</Strong></h4>
+
+            <ul>
+             <li><strong>Languages :</strong>Python, Javascript, HTML/CSS/Bootstrap, R, VBA, RPG (various versions), CL/CLLE, embedded SQL, Pandas, pySpark</li>
+             <li><strong>Software :</strong>Excel, Tableau, mapbox</li>
+             <li><strong>Tools :</strong>Git, MQ, FTP, machine learning (sklearn), MRjob, Leaflet, D3.js, Matplotlib, webscraping (splinter and selenium),
+                         plot.ly, SQL Alchemy, FileZilla, Putty/Puttygen (for SSH) and flask</li>
+             <li><strong>Platform :</strong>Iseries, AS/400, AWS S3/RDS/EC2, Heroku</li>
+             <li><strong>Databases / file formatting :</strong>Relational database, SQL, mySQL, SQLite, csv, MongoDB and json/geojson</li>
+           </ul>
+        </div>
+      <hr>
+      <br>
+    </section>
+
+  <div class="container">  
+  <article id="portfolio">
+    
+    <h3><strong>Data Analytics Projects :</strong></h3>
+    <br>
+    <ul>
+        <li><strong></strong>Mars Mission App displays the current Mars news and information by webscraping the several websites.  
+          It uses MongoDB, webscraping (selenium and beautiful soups), python, HTML/CSS/Bootstap and flask app and deployed in Heroku.
+          <a href="https://mars-mission-app.herokuapp.com/" target='_blank'>https://mars-mission-app.herokuapp.com</a></li>
+          <br>
+
+        <li><strong></strong>In the next 10 minutes, you can closely monitor earthquakes as it happens.
+          It uses mapbox for map layers, leaflet, D3, tooltip and javascript. It is deployed in AWS S3 : 
+          <a href="http://moemily-earthquakes-monitor.s3-website.us-east-2.amazonaws.com/" target='_blank'>http://moemily-earthquakes-monitor.s3-website.us-east-2.amazonaws.com/</a></li>
+          <br>
+
+        <li><strong></strong>Miami Crime study (using jail booking dataset from Miami-Dade Open Data Hub website). It uses data from 2015 up to current year.  
+          Dashboard is done in Tableau, machine learning models used are random forest, linear regression and SVM.  It is hosted in AWS EC2.
+
+          <a href="http://18.218.187.124:5000/" target='_blank'>http://18.218.187.124:5000/</a></li>
+          <br>
+  
+        <li><strong></strong>An interactive app for the belly button biodiversity shows bacteria found in belly button samples in a bubble chart,
+          a pie chart and a gauge chart.  It employs a flask app, SQL, HTML/CSS/BOOTSTRAP, javascript and D3.js.  It is hosted in heroku.
+  
+          <a href="https://data-analytics-bellybutton.herokuapp.com" target='_blank'><br>https://data-analytics-bellybutton.herokuapp.com</a></li>
+        <br>
+ 
+        <li><strong></strong>A guide to beginners in investing in stocks.  It contains company profiles and their stock prices are plotted against S&P index.
+          This app, deployed in heroku, uses highcharts, javascript, API to retrieve real-time stock prices and flask app.
+          
+          <a href="https://hemoru-project-2.herokuapp.com/" target='_blank'><br>https://hemoru-project-2.herokuapp.com</a></li>
+        <br>
+     
+        <li><strong></strong>Using data from factfinder.census.gov, this app demonstrates the health risk faced by certain demographics. It builds scatter
+          plots with multiple x- and y-axes to show the relationship of the x and the y variables.
+          
+          <a href="https://multiple-x-y-axes.herokuapp.com" target='_blank'><br>https://multiple-x-y-axes.herokuapp.com</a></li>
+        <br>
+     
+        <li><strong></strong>Tip calculator app is hosted in heroku.
+          
+          <a href="https://moemily-tip-calculator.herokuapp.com" target='_blank'><br>https://moemily-tip-calculator.herokuapp.com</a></li>
+        <br>
+     
+        <li><strong></strong>Where and when did an UFO sighting took place ?  This app, deployed in AWS S3, allows searching/filtering of variables.
+          
+          <a href="https://moemily-ufo-sightings.s3-website-us-east-1.amazonaws.com" target='_blank'><br>https://moemily-ufo-sightings.s3-website-us-east-1.amazonaws.com</a></li>
+        <br>
+     
+        <li><strong></strong>Tableau project showing the New York City bike ridership : 
+            <br>
+            <br>
+          <div class='tableauPlaceholder' id='viz1562029730130' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;6M&#47;6MWTPFJ3Z&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;6MWTPFJ3Z' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;6M&#47;6MWTPFJ3Z&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                
+        </li>
+      </ul>
+
+  </article>
+  </div>
+  <hr>
+  <div class="row" id='hobbies'>
+    <h4><Strong>Hobbies</Strong></h4>
+      <ul>
+      <li>Reading-A few books worth recommending:</li>
+        <ul>
+        <li><font color=”green”><b>Sapiens:A Brief History of Humankind</b></font>&nbsp; by Yuval Noah Harari</li>
+        <li><font color=”green”><b>Educated:A Memoir</b></font>&nbsp; by Tara Westover</li>
+        <li><font color=”green”><b>The Future of Capitalism</b></font>&nbsp; by Paul Collier</li>
+        <li><font color=”green”><b>Atlas Shrugged</b></font>&nbsp; by Ayn Rand</li>
+        <li><font color=”green”><b>When breath becomes air</b></font>&nbsp; by Paul Kalanithi</li>
+        <li><font color=”green”><b>The Emperor of All Maladies:A Biography of Cancer</b></font>&nbsp; by Siddhartha Mukherjee</li>
+        <li><font color=”green”><b>The Gene:An Intimate History</b></font>&nbsp; by Siddhartha Mukherjee</li>
+        <li><font color=”green”><b>The Last Lecture</b></font>&nbsp; by Paul Pausch</li>
+        </ul>
+       <br> 
+      <li>Crotchet-favorite patterns to share:</li>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=BxGW6zzvXr8" target='_blank'>Woman Top Crochet by Lidia Crochet Knitting</a></li>
+          <li><a href="https://www.youtube.com/watch?v=hdadbRjW6pA" target='_blank'>Women Blouses All Sizes by Lidia Crochet Knitting</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jH-0I_c8y24" target='_blank'>Blouse coquilles crochet toutes tailles "LidiaCrochetTricot" by Lidia Crochet Knitting</a></li>
+          <li><a href="https://www.youtube.com/watch?v=d1rJcSbrRS8&t=34s" target='_blank'>Jersey hojitas en relieve Crochet "Teje con Lidia!" by Lidia Crochet Knitting</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jmKE_dE8h4c" target='_blank'>Passo a passo ponto estrela de Crochê | Professora Simone by Professora Simone Eleotério
+          </a></li>
+        </ul>
+      </ul>
+  </div>
+
+
+
+</section>
+
+  </main>
+
+  <script type='text/javascript'>                   
+    var divElement = document.getElementById('viz1562029730130');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                   
+    vizElement.style.width='800px';
+    vizElement.style.height='627px';                    
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+  </script>
+</body>
+
+</html>
