@@ -59,6 +59,7 @@ b {
 hr { display: block; height: 1px;
     border: 0; border-top: 1px solid;
     border-color: #0404B4;
+    width:85%;
 }
 
 .container-border {
@@ -122,11 +123,13 @@ hr { display: block; height: 1px;
 }
 
 #self-desc, #skills {
+/*  display:inline-block;  */
   text-align : left;
   font-size:18px;  
-  width: 80%x;
+  width: 90%;
   min-height: 150px;
   line-height:1.5em;  
+  overflow:auto;  
 }
 
 #myBtn {
@@ -266,7 +269,8 @@ h3 {
 #self-desc, #skills {
   text-align : left;
   font-size:12px;  
-  width: 80%x;
+  width: 90%x;
+  float:left; 
   min-height: 150px;
   line-height:1.5em;  
 }
