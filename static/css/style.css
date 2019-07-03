@@ -179,6 +179,16 @@ body {
      
 }
     
+
+#bio-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  border:solid;
+  border-color:red;
+}
+
+
 }
 
 
@@ -192,7 +202,16 @@ body {
       min-height: 4000px;
      
 }
-    
+
+#bio-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border:solid;
+  border-color:red;
+}
+
+
 }
 
 
