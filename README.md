@@ -1,5 +1,6 @@
-# EmilyMo.github.io
-Emily Mo's Personal Page 
+# bio
+
+Emily Mo's Bio Page 
   Just graduated from University of Miami's Certification of Data Analytics.
   New skills can't wait to be utilized in data visualization.
   
