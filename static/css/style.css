@@ -293,3 +293,14 @@ h3 {
    }
 
 }
+
+
+@media screen and (max-width: 800px) {
+
+.container-border {
+  border-width : 5px;  
+  min-height:3500px;  
+    
+}
+
+}
