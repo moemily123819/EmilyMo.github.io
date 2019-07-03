@@ -160,10 +160,48 @@ body {
   line-height: 125%;
 }
 
+#self-desc, #skills {
+  clear:left;  
+  text-align : left;
+  font-size:16px;  
+  width: 90%x;
+  float:left; 
+  word-wrap:break-word;  
+  text-overflow: ellipsis;
+  line-height:1.5em;  
+}
+
+.container-border {
+      border:solid;  
+      border-width : 5px;  
+      width:95%;  
+      min-height: 3500px;
+     
+}
+    
+}
+
+
+@media (max-width: 630px) {
+
+
+.container-border {
+      border:solid;  
+      border-width : 5px;  
+      width:95%;  
+      min-height: 4000px;
+     
+}
+    
+}
+
+
+
+/*
 #contact-info {
     clear:left;
     width:50%;
-    padding-right:30px;
+    padding-left:30px;
       }
 
 .container-border {
@@ -209,8 +247,6 @@ h3 {
 }
 
     
-
-/* Selecting elements by class */
 .container {
   display:inline-block;  
   width:95%;  
@@ -221,7 +257,6 @@ h3 {
     
 }
 
-/* Selecting elements by ID */
 #main-bio,
 #bio-image {
   display:inline-block;  
@@ -253,6 +288,7 @@ h3 {
 }
 
 #self-desc, #skills {
+  clear:left;  
   text-align : left;
   font-size:12px;  
   width: 90%x;
@@ -293,4 +329,24 @@ h3 {
     
 }
 
+#contact-info {
+    clear:left;
+    width:50%;
+    padding-left:10px;
+      }
+
+#self-desc {
+  clear:left;
+  padding-left:10px;
+  display:inline-block;  
+  text-align : left;
+  font-size:18px;  
+  width: 90%;
+  min-height: 150px;
+  line-height:1.5em;  
+  overflow:auto;  
 }
+
+    
+    
+}*/
