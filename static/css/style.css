@@ -204,7 +204,7 @@ body {
 
 
 li {
-  font-size: 14px;
+  font-size: 12px;
   
 }    
     
@@ -212,14 +212,14 @@ li {
   word-break: break-word;
   white-space:normal;  
   padding-right:200px;
-  font-size:14px;
+  font-size:12px;
   width:620px;  
 }
 #c-info {
   word-break: break-all;
   white-space:normal;  
   padding-right:200px;
-  font-size:14px;
+  font-size:12px;
 }
 
 
