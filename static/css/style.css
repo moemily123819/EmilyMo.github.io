@@ -202,14 +202,11 @@ body {
     
 }
 
-#c-info {
-/*  word-break: break-all;
-  white-space:normal;  
-  font-size:12px;
-  padding-right:100px;*/
-  display:none;  
-    
-    } 
+
+li {
+  font-size: 14px;
+  
+}    
     
 #self-desc {
   word-break: break-word;
@@ -217,6 +214,12 @@ body {
   padding-right:200px;
   font-size:14px;
   width:620px;  
+}
+#c-info {
+  word-break: break-all;
+  white-space:normal;  
+  padding-right:200px;
+  font-size:14px;
 }
 
 
