@@ -14,24 +14,6 @@ header {
 }
 
 
-#portfolio {
-  clear:left; 
-  width:90%;  
-  text-align : left;
-  font-size:16px;
-  height : 1.25em;
-  
-}
-
-#projects {
-  text-align : left;
-  font-size:16px;
-  height : 1.25em;
-  
-}
-
-
-
 li {
   font-size: 18px;
   
@@ -67,14 +49,15 @@ hr { display: block; height: 1px;
   border-width : 10px;  
   border-color : #0404B4;  
   width:95%;  
+  margin-left:10px;  
   min-height:3000px;  
     
 }
-/* Selecting elements by class */
+
 .container {
   display:inline-block;  
   width:95%;  
-  margin-left:30px;
+  margin-right:30px;  
   padding-left:30px;
   margin-right:30px;
   padding-right:30px;
@@ -126,11 +109,29 @@ hr { display: block; height: 1px;
   display:inline-block;  
   text-align : left;
   font-size:18px;  
-  width: 90%;
+  width: 100%;
   min-height: 150px;
   line-height:1.5em;  
   overflow:auto;  
 }
+
+#portfolio {
+  clear:left; 
+  width:100%;  
+  text-align : left;
+  font-size:16px;
+  height : 1.25em;
+  
+}
+
+#projects {
+  text-align : left;
+  font-size:16px;
+  height : 1.25em;
+  
+}
+
+
 
 #myBtn {
    display: none;
@@ -160,6 +161,17 @@ body {
   line-height: 125%;
 }
 
+.container {
+  display:inline-block;  
+  width:95%;  
+  margin-right:20px;  
+  padding-left:20px;
+  margin-right:20px;
+  padding-right:20px;
+    
+}
+
+
 #self-desc, #skills {
   clear:left;  
   text-align : left;
@@ -174,7 +186,9 @@ body {
       border:solid;  
       border-width : 5px;  
       width:95%;  
-      min-height: 3500px;
+      margin-left:5px;    
+      margin-bottom:20px;
+      padding-bottom:20px;
      
 }
     
@@ -194,12 +208,25 @@ body {
 @media (max-width: 695px) {
 
 
+.container {
+  display:inline-block;  
+  width:95%;  
+  padding-left:10px;
+  margin-right:10px;
+  padding-right:10px;
+    
+}
+
+
 .container-border {
     border-width : 5px;  
     width:95%;  
-    min-height: 3500px;
+/*    min-height: 3500px;*/
     word-break: break-all;
-    
+    margin-left:5px;
+    margin-bottom:10px;
+    padding-bottom:10px;
+   
 }
 
 
@@ -243,10 +270,22 @@ li {
 
 @media (max-width: 500px) {
 
+.container {
+  display:inline-block;  
+  width:95%;  
+  margin-right:3px;  
+  padding-left:3px;
+  margin-right:3px;
+  padding-right:3px;
+    
+}
+
+
 
 .container-border {
     border:none;
     border-style:none;
+    padding-bottom:20px;
     
 }
 
