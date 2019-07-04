@@ -166,7 +166,6 @@ body {
   font-size:16px;  
   width: 90%x;
   float:left; 
-  word-wrap:break-word;  
   text-overflow: ellipsis;
   line-height:1.5em;  
 }
@@ -192,17 +191,42 @@ body {
 }
 
 
-@media (max-width: 630px) {
+@media (max-width: 695px) {
 
 
 .container-border {
-      border:solid;  
-      border-width : 5px;  
-      width:95%;  
-      min-height: 4000px;
-     
+    border-width : 5px;  
+    width:95%;  
+    min-height: 3500px;
+    word-break: break-all;
+    
 }
 
+#c-info {
+/*  word-break: break-all;
+  white-space:normal;  
+  font-size:12px;
+  padding-right:100px;*/
+  display:none;  
+    
+    } 
+    
+#self-desc {
+  word-break: break-word;
+  white-space:normal;  
+  padding-right:200px;
+  font-size:14px;
+  width:620px;  
+}
+
+
+.tableauPlaceholder {
+    visibility:hidden;
+    
+    }
+    
+     
+    
 #bio-image {
   width: 100px;
   height: 100px;
