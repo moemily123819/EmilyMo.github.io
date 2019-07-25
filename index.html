@@ -7,11 +7,16 @@
   <meta charset="UTF-8">
   <title>Emily Mo's Bio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="static/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
+  
   	<!-- Button to go up -->
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     
@@ -27,203 +32,81 @@
 	}
 
 		function topFunction() {
-			document.body.scrollTop = 30;
-			document.documentElement.scrollTop = 30;
+			document.body.scrollTop = 10;
+			document.documentElement.scrollTop = 10;
 	}
 	</script>
 
 
-  <main class="container container-border"  content="width=device-width, initial-scale=1.0">
-    <h1>Emily Mo's Bio</h1>
+  <main class="outer-container container-border"  content="width=device-width, initial-scale=1.0">
+    <section id="nav_bar">
+		<nav class="navbar navbar-inverse"  style="background-color:white;">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span> 
+		</button>
+		<a class="navbar-brand" href="#"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar" style="background-color:#F8E0E6;">
+		<ul class="nav navbar-nav">
+			<li class="active" id="nav_button"><a href="index.html"><strong>Home</strong></a></li>
+			<li><a href="skills.html" id="nav_button"><strong>Skills</strong></a></li>
+			<li><a href="experiences.html" id="nav_button"><strong>Experiences</strong></a></li> 
+			<li><a href="projects.html" id="nav_button"><strong>Data Analytics Projects</strong></a></li> 
+			<li><a href="montessori.html" id="nav_button"><strong>Montessori Method</strong></a></li> 
+			<li><a href="hobbies.html" id="nav_button"><strong>Hobbies</strong></a></li> 
+		</ul>
+		</div>
+		</div>
+	</nav>
+	<div class="row">
+    <div class='col-md-6 left-section'>
+    <h1><strong>Emily Mo</strong></h1>
+    <h4><strong>Data Analyst / Iseries Expert</strong></h4>
+    <div class="row col-md-6" id="contact-info">
+            <li><strong>Email:</strong> <a href="#">moemily@bellsouth.net</a></li>
+            <li><strong>Github:</strong> <a href="https://github.com/moemily123819/" target="_blank">https://github.com/moemily123819/</a></li>
+            <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/emily-mo-miami/" target="_blank">https://www.linkedin.com/in/emily-mo-miami/</a></li>
+    </div>
+  </div>
+  <div class='col-md-6 right-section'>
+      <div id="my_pic">
+            <img id="bio-image" src="static\images\me3.PNG" alt="Emily Mo">
+    </div>
+    </div>
+  </div>
+  
+	<br>
+	<br>
 
-    <section id="main-bio">
-      <section id="figure">
-        <div class="row">
-          <div class="col-md-4">
-            <img id="bio-image" src="static\images\me.PNG" alt="Emily Mo">
-          </div>
-          <div class ="col-md-8 container-fluid" id="contact-info">
-            <h3><Strong>Contact Info</Strong></h3>
-            <ul id='c-info'>
-              <li><strong>Email:</strong> <a href="#">moemily@bellsouth.net</a></li>
-              <li><strong>Github:</strong> <a href="https://github.com/moemily123819/" target="_blank">https://github.com/moemily123819/</a></li>
-              <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/emily-mo-miami/" target="_blank">https://www.linkedin.com/in/emily-mo-miami/</a></li>
-            </ul>
-            <br>
-            <div id="self-desc">
-                <p>A self-motivated, self-disciplined core banking software consultant turned data analyst seeking an opportunity to use my knowledge to  gather, transform, analyze, interpret, present and visualize data for a company to grow, expand, formulate and strategize company’s mission and values.</p>
-            </div>  
-    
-          </div>
-            <br>
-            <br>
-        </div>
-        <div class="row" id='skills'>
-          <h3><Strong>&nbsp;&nbsp; Skills</Strong></h3>
-
-            <ul>
-             <li><strong>Languages :</strong>Python, Javascript, HTML/CSS/Bootstrap, R, VBA, RPG (various versions), CL/CLLE, embedded SQL, Pandas, pySpark</li>
-             <li><strong>Software :</strong>Excel, Tableau, mapbox</li>
-             <li><strong>Tools :</strong>Git, MQ, FTP, machine learning (sklearn), MRjob, Leaflet, D3.js, Matplotlib, webscraping (splinter and selenium),
-                         plot.ly, SQL Alchemy, FileZilla, Putty/Puttygen (for SSH) and flask</li>
-             <li><strong>Platform :</strong>Iseries, AS/400, AWS S3/RDS/EC2, Heroku</li>
-             <li><strong>Databases / file formatting :</strong>Relational database, SQL, mySQL, SQLite, csv, MongoDB and json/geojson</li>
-           </ul>
-        </div>
-      <hr>
-      <br>
-    </section>
-
-  <div class="container">  
-  <article id="portfolio">
-    
-    <h3><strong>Data Analytics Projects :</strong></h3>
+	<div class="row">
+      <div class='col-md-6 left-section2'>
+          <div id="girl_img">
+              <img id="girl_image" src="static\images\girl.PNG" alt="girl">
+      </div>
+    </div>
+    <div class='col-md-6 right-section'>
+       <div id="self-desc">
+          <p><b>A self-motivated, self-disciplined core banking software consultant turned data analyst seeking an opportunity to use my knowledge to  gather, transform, analyze, interpret, present and visualize data for a company to grow, expand, formulate and strategize company’s mission and values.</b></p>
     <br>
-    <ul>
-        <li><strong></strong>Mars Mission App displays the current Mars news and information by webscraping the several websites.  
-          It uses MongoDB, webscraping (selenium, splinter and beautiful soups), python, HTML/CSS/Bootstap and flask app and deployed in Heroku.
-          <a href="https://mars-mission-app.herokuapp.com/" target='_blank'>https://mars-mission-app.herokuapp.com</a></li>
-          <br>
-
-        <li><strong></strong>In the next 10 minutes, you can closely monitor earthquakes as it happens.
-          It uses mapbox for map layers, leaflet, D3, tooltip and javascript. It is deployed in AWS S3 : 
-          <a href="http://moemily-earthquakes-monitor.s3-website.us-east-2.amazonaws.com/" target='_blank'>http://moemily-earthquakes-monitor.s3-website.us-east-2.amazonaws.com/</a></li>
-          <br>
-        
-          <li><strong></strong>My SQL ability - various SQL statements on SAKILA : 
-            <a href="https://github.com/moemily123819/mySQL" target='_blank'>https://github.com/moemily123819/mySQL</a></li>
-          <br>
-
-          <li><strong></strong>Python scripts in various projects - using API, matplotlib, array processing, pandas with dataframes and so much more : 
-            <ul>
-              <li><a href ="https://github.com/moemily123819/python-challenge" target='_blank'>Showcase 2 Python programs- one on bank's profit and loss data and another on election results</a>
-              </li>
-              <li><a href ="https://github.com/moemily123819/Python_API_weather_analysis" target='_blank'>Using API to find out the co-relations between latitudes and weather conditions</a>
-                </li>
-                <li><a href ="https://github.com/moemily123819/PyCitySchool_analysis" target='_blank'>Comparing and analyzing standardized test results among high schools</a>
-                </li>
-                <li><a href ="https://github.com/moemily123819/Pyber_analysis" target='_blank'>Analysis on how a ridesharing company performed in rural, urban and suburban areas</a>
-                </li>
-
-            </ul>
-          <br>
-
-        <li><strong></strong>Miami Crime study (using jail booking dataset from Miami-Dade Open Data Hub website). It uses data from 2015 up to current year.  
-          Dashboard is done in Tableau, machine learning models used are random forest, linear regression and SVM.  It is hosted in AWS EC2.
-          It was a group project with three other team members. I wrote/hosted the app (flask, HTML/CSS) and created story of the crime by homelesss. 
-
-          <a href="http://18.218.187.124:5000/" target='_blank'>http://18.218.187.124:5000/</a></li>
-          <br>
+    <br>
+    <div class= "col-sm-offset-3" id="resume">
+        <a href="static/images/resume(BA).pdf" download>
+          <img src="static/images/resumeButton.PNG" alt="resume" width="120" height="80" style="margin-left:25px;">
+        </a>          
+    </div>  
+  </div>  
+</div>
   
-        <li><strong></strong>An interactive app for the belly button biodiversity shows microbes found in belly button samples in a bubble chart,
-          a pie chart and a gauge chart.  It employs flask app, SQL alchemy, sqlite, HTML/CSS/BOOTSTRAP, javascript and D3.js.  It is hosted in heroku.
-  
-          <a href="https://data-analytics-bellybutton.herokuapp.com" target='_blank'>https://data-analytics-bellybutton.herokuapp.com</a></li>
-        <br>
- 
-        <li><strong></strong>Automate excel workbook processing via VBS. 
-  
-          <a href="https://github.com/moemily123819/Stock_data_processing_by_VBS" target='_blank'>Multiple-year stock data to be analyzed by the VBS</a></li>
-        <br>
- 
-        <li><strong></strong>A guide to beginners in investing in stocks.  It contains company profiles and their stock prices are plotted against S&P index.
-          This app, deployed in heroku, uses highcharts, javascript, API to retrieve real-time stock prices and flask app.  It was a group project with two other memebers.
-          I wrote / deployed the flask app with Mongo, highcharts, the python program, all the javascript programs except one which was co-created with a member and worked on 
-          HTML/CSS with another member of the team. <a href="https://hemoru-project-2.herokuapp.com/" target='_blank'>https://hemoru-project-2.herokuapp.com</a></li>
-        <br>
-     
-        <li><strong></strong>Using data from factfinder.census.gov, this app demonstrates the co-relations of health risk, obesity and smoking hazards, poverty, age and income. 
-          It builds an animated scatter plot with multiple x- and y-axes to show the relationship of the x and the y variables.
-          
-          <a href="https://multiple-x-y-axes.herokuapp.com" target='_blank'>https://multiple-x-y-axes.herokuapp.com</a></li>
-        <br>
-     
-        <li><strong></strong>How much to tip ?  What is the total bill ?  Splitting the bill with friends ? No problem ! Tip calculator app, hosted in heroku, is here to help.
-          
-          <a href="https://moemily-tip-calculator.herokuapp.com" target='_blank'><br>https://moemily-tip-calculator.herokuapp.com</a></li>
-        <br>
-     
-        <li><strong></strong>Just use HTML/CSS/Bootstrap, an app is at your fingers. It is hosted in AWS S3 :
-          
-          <a href="http://climate-app.s3-website.us-east-2.amazonaws.com/" target='_blank'><br>http://climate-app.s3-website.us-east-2.amazonaws.com/</a></li>
-        <br>
-     
-        <li><strong></strong>Where and when did an UFO sighting took place ?  This app, deployed in AWS S3, allows searching/filtering of date, city, state, country and
-          shape of the unidentified flying object.  Check it out !
-          
-          <a href="http://moemily-ufo-sightings.s3-website-us-east-1.amazonaws.com" target='_blank'>http://moemily-ufo-sightings.s3-website-us-east-1.amazonaws.com</a></li>
-        <br>
-     
-        <li><strong></strong>Tableau project showing the New York City bike ridership : 
-            <br>
-            <br>
-          <div class='tableauPlaceholder' id='viz1562029730130' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;6M&#47;6MWTPFJ3Z&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;6MWTPFJ3Z' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;6M&#47;6MWTPFJ3Z&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                
-        </li>
-        <br>
-        <br>
-
-        <li><strong></strong>Tableau map showing the Miami/Dade public schools/police stations/Zillow HVI by zip code :
-          <br>
-          <br>
-          <div class='tableauPlaceholder' id='viz1563016580958' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;Miami-SchoolsPoliceStationsZillowHVI&#47;Miami-PublicSchoolsPoliceStationsZillowHVI&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Miami-SchoolsPoliceStationsZillowHVI&#47;Miami-PublicSchoolsPoliceStationsZillowHVI' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;Miami-SchoolsPoliceStationsZillowHVI&#47;Miami-PublicSchoolsPoliceStationsZillowHVI&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                
-          <script type='text/javascript'>                    
-          var divElement_958 = document.getElementById('viz1563016580958');                    
-          var vizElement_958 = divElement_958.getElementsByTagName('object')[0];                    
-          vizElement_958.style.width='80%';vizElement_958.style.height=(divElement_958.offsetWidth*0.60)+'px';                    
-          var scriptElement_958 = document.createElement('script');                    
-          scriptElement_958.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-          vizElement_958.parentNode.insertBefore(scriptElement_958, vizElement_958);                
-          </script>
-
-        </li>  
-
-      </ul>
-
-  </article>
   </div>
-  <hr>
-  <div class="row" id='hobbies'>
-    <h4><Strong>&nbsp;&nbsp;Hobbies</Strong></h4>
-      <ul>
-      <li>Reading-A few books worth recommending:</li>
-        <ul>
-        <li><font color=”green”><b>Sapiens:A Brief History of Humankind</b></font>&nbsp; by Yuval Noah Harari</li>
-        <li><font color=”green”><b>Educated:A Memoir</b></font>&nbsp; by Tara Westover</li>
-        <li><font color=”green”><b>The Future of Capitalism</b></font>&nbsp; by Paul Collier</li>
-        <li><font color=”green”><b>Atlas Shrugged</b></font>&nbsp; by Ayn Rand</li>
-        <li><font color=”green”><b>When breath becomes air</b></font>&nbsp; by Paul Kalanithi</li>
-        <li><font color=”green”><b>The Emperor of All Maladies:A Biography of Cancer</b></font>&nbsp; by Siddhartha Mukherjee</li>
-        <li><font color=”green”><b>The Gene:An Intimate History</b></font>&nbsp; by Siddhartha Mukherjee</li>
-        <li><font color=”green”><b>The Last Lecture</b></font>&nbsp; by Paul Pausch</li>
-        </ul>
-       <br> 
-      <li>Crotchet-favorite patterns to share:</li>
-        <ul>
-          <li><a href="https://www.youtube.com/watch?v=BxGW6zzvXr8" target='_blank'>Woman Top Crochet by Lidia Crochet Knitting</a></li>
-          <li><a href="https://www.youtube.com/watch?v=hdadbRjW6pA" target='_blank'>Women Blouses All Sizes by Lidia Crochet Knitting</a></li>
-          <li><a href="https://www.youtube.com/watch?v=jH-0I_c8y24" target='_blank'>Blouse coquilles crochet toutes tailles "LidiaCrochetTricot" by Lidia Crochet Knitting</a></li>
-          <li><a href="https://www.youtube.com/watch?v=d1rJcSbrRS8&t=34s" target='_blank'>Jersey hojitas en relieve Crochet "Teje con Lidia!" by Lidia Crochet Knitting</a></li>
-          <li><a href="https://www.youtube.com/watch?v=jmKE_dE8h4c" target='_blank'>Passo a passo ponto estrela de Crochê | Professora Simone by Professora Simone Eleotério
-          </a></li>
-        </ul>
-      </ul>
-  </div>
-
-
-
-</section>
-
+    <br>
+    <br>
   </main>
 
-  <script type='text/javascript'>                   
-    var divElement = document.getElementById('viz1562029730130');                    
-    var vizElement = divElement.getElementsByTagName('object')[0];                   
-    vizElement.style.width='800px';
-    vizElement.style.height='627px';                    
-    var scriptElement = document.createElement('script');                    
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-  </script>
+
 </body>
 
 </html>

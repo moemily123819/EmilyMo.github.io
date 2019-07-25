@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="UTF-8">
+  <title>Emily Mo's Bio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+  	<!-- Button to go up -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+	<script>
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+				document.getElementById("myBtn").style.display = "block";
+				} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+	}
+
+		function topFunction() {
+			document.body.scrollTop = 10;
+			document.documentElement.scrollTop = 10;
+	}
+	</script>
+
+  <main class="outer-container container-border"  content="width=device-width, initial-scale=1.0">
+    <section id="nav_bar">
+		<nav class="navbar navbar-inverse"  style="background-color:white;">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span> 
+		</button>
+		<a class="navbar-brand" href="#"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar" style="background-color:#F8E0E6;">
+		<ul class="nav navbar-nav">
+			<li class="active" id="nav_button"><a href="index.html"><strong>Home</strong></a></li>
+			<li><a href="skills.html" id="nav_button"><strong>Skills</strong></a></li>
+			<li><a href="experiences.html" id="nav_button"><strong>Experiences</strong></a></li> 
+			<li><a href="projects.html" id="nav_button"><strong>Data Analytics Projects</strong></a></li> 
+			<li><a href="montessori.html" id="nav_button"><strong>Montessori Method</strong></a></li> 
+			<li><a href="hobbies.html" id="nav_button"><strong>Hobbies</strong></a></li> 
+		</ul>
+		</div>
+		</div>
+	</nav>
+	<div class="row" id="hobbies">
+    <h1><strong>Hobbies</strong></h1>
+ 	<section id="crochet">  
+		<div class="row" id = "hobbies">
+		  <h3><b>* Crochet - Some favorite patterns to share:</b></h3>
+		  <br>
+			<div class="sweaters">
+			<div class="column">
+				<div class="card2">
+						<div class="column"><div class="card2"><img id="figures" src="static\images\s7.PNG"></div></div>
+				</div>
+			</div>
+			</div>
+		<div class="row">
+					<ul>
+					  <li><a href="https://www.youtube.com/watch?v=BxGW6zzvXr8" target='_blank'>Woman Top Crochet by Lidia Crochet Knitting</a></li>
+					  <li><a href="https://www.youtube.com/watch?v=hdadbRjW6pA" target='_blank'>Women Blouses All Sizes by Lidia Crochet Knitting</a></li>
+					  <li><a href="https://www.youtube.com/watch?v=jH-0I_c8y24" target='_blank'>Blouse coquilles crochet toutes tailles "LidiaCrochetTricot" by Lidia Crochet Knitting</a></li>
+					  <li><a href="https://www.youtube.com/watch?v=d1rJcSbrRS8&t=34s" target='_blank'>Jersey hojitas en relieve Crochet "Teje con Lidia!" by Lidia Crochet Knitting</a></li>
+					  <li><a href="https://www.youtube.com/watch?v=jmKE_dE8h4c" target='_blank'>Passo a passo ponto estrela de Crochê | Professora Simone by Professora Simone Eleotério
+					  </a></li>
+					</ul>
+				  </ul>
+		</div>
+		</div>
+			
+	</section>
+			
+	<hr>		
+	<div id="hobbies">
+		<h3><b>* Reading - A few books worth recommending:</b></h3>
+	</div>
+	  <br>
+	  <br>
+	  
+   	<section id="books">
+	  <div class="row">
+		<div class="column2">
+			<div class= "card2">
+			<img id="pics" src="static\images\sapien.PNG" alt="sapien">		
+			<p>Sapiens: A Brief History of Humankind</p>
+			<p>by Yuval Noah Harari</p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class= "card2">
+				<img id="pics" src="static\images\educated.PNG" alt="educated">
+				<p><b>Educated:A Memoir</b></p>
+				<p>by Tara Westover</p>
+			</div>
+		</div>
+
+		<div class="column2">
+			<div class= "card2">
+				<img id="pics" src="static\images\capitalism.PNG" alt="capitalism">
+				<p><b>The Future of Capitalism</b></p>
+				<p>by Paul Collier</p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class= "card2">
+				<img id="pics" src="static\images\gene.PNG" alt="gene">
+				<p><b>The Gene:An Intimate History</b></p>
+				<p>by Siddhartha Mukherjee</p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class= "card2">
+				<img id="pics" src="static\images\cancer.PNG" alt="cancer">
+				<p><b>The Emperor of All Maladies:A Biography of Cancer</b></p>
+				<p>by Siddhartha Mukherjee</p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class= "card2">
+				<img id="pics" src="static\images\breath.PNG" alt="breath">
+				<p><b>When breath becomes air</b></p>
+				<p>by Paul Kalanithi</p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class= "card2">
+				<img id="pics" src="static\images\atlas.PNG" alt="atlas">
+				<p><b>Atlas Shrugged</b></p>
+				<p>by Ayn Rand</p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class= "card2">
+				<img id="pics" src="static\images\lastLecture.PNG" alt="lastLecture">
+				<p><b>The Last Lecture</b></p>
+				<p>by Paul Pausch</p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class= "card2">
+				<img id="pics" src="static\images\hp.PNG" alt="hp">
+				<p><b>Harry Potter Series</b></p>
+				<p>by J.K. Rowling</p>
+			</div>
+		</div>
+		<div class="column2">
+			<div class= "card2">
+				<img id="pics" src="static\images\artemis.PNG" alt="artemis">
+				<p><b>Artemis Fowl Series</b></p>
+				<p>by Eoin Colfer</p>
+			</div>
+		</div>
+	</div>
+	</section>
+	<br>
+	<hr>
+   
+
+  </main>
+
+  <script type='text/javascript'>                   
+	var sweaters = ['s1.PNG', 's2.PNG', 's3.PNG', 's4.PNG','s5.PNG', 's6.PNG', 's7.PNG', 's8.PNG', 's9.PNG', 's10.PNG','s11.PNG', 's12.PNG', 's13.PNG', 's14.PNG'];  
+	
+	var myVar = setInterval(changeSweater, 2000);
+
+	function changeSweater() {
+		var random = Math.floor(Math.random()*sweaters.length);
+		$(".sweaters").empty();
+		console.log('random = ', random);
+		var t = '<div class="column"><div class="card2"><img id="figures" src="static\\images\\';
+		var p = sweaters[random];
+		var q = '"></div></div>';
+		console.log('random = ', t, p, q);
+		$( 'div.sweaters' ).append(t+p+q);
+			}
+
+      
+	
+	</script>
+</body>s
+
+</html>

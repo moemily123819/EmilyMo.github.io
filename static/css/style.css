@@ -2,57 +2,119 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Avant Garde", Verdana, Georgia, Arial, Times,Georgia, serif, "Times New Roman";
   font-size: 18px;
   line-height: 150%;
-  color: #255;
-  background: #E0F2F7;
+  color: black;
 }
 
-header {
-  background: #333;
+#books {
+  color : #5F04B4;
 }
 
+#crochet {
+  color : #5F04B4;
+}
+
+.column2 {
+  float: left;
+  width : 20%;  
+  padding: 0 10px 10px;  
+}
+
+
+.card2 {
+    width:225px;
+    height:225x;
+    text-align:center;
+    font-size:18px;
+}
+
+.column {
+  float: left;
+  padding-left:10px;  
+}
+
+.card {
+    width:150px;
+    height:150px;
+}
+.card3 {
+    width:150px;
+    height:175px;
+}
 
 li {
-  font-size: 18px;
-  
+  font-size: 16px;
+  color: #BE81F7;
+}
+
+.container-fluid
+{
+  padding:0 0 0 0;
+   
+}
+
+.navbar-inverse .navbar-toggle
+{
+ background-color:#BE81F7;   
 }
 
 
-h1 {
-  padding: 20px 0;
+.navbar-inverse .navbar-nav>li>a {
+    color: #BE81F7;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #BE81F7;
+    background-color: white;
+    background-color:#F8E0E6;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+     margin-left:250px; 
+}
+
+
+
+
+
+a {
+  color:#BE81F7;
+}
+
+b {
+  color: black;
+}
+
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid;
+    border-color: #BE81F7;
+    width:85%;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    color:#610B5E;
+}
+
+.left-section {
+  padding-top:80px;  
+  padding-left: 150px;;
   margin: 0;
   margin-bottom: 20px;
   font-size: 28px;
   text-align: left;
 }
 
-
-a {
-  color: #d21034;
+.left-section2 {
+  padding-left: 50px;;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: left;
 }
 
-b {
-  color: red;
-}
-
-
-hr { display: block; height: 1px;
-    border: 0; border-top: 1px solid;
-    border-color: #0404B4;
-    width:85%;
-}
-
-.container-border {
-  border:solid;  
-  border-width : 10px;  
-  border-color : #0404B4;  
-  width:95%;  
-  margin-left:10px;  
-  min-height:4000px;  
-    
-}
 
 .container {
   display:inline-block;  
@@ -65,61 +127,89 @@ hr { display: block; height: 1px;
 }
 
 /* Selecting elements by ID */
-#main-bio,
 #bio-image {
   display:inline-block;  
   float: left;
+  margin-left:75px;  
   font-size:20px;
-  height : 1.5em;
-  
+  width:40%;    
 }
 
-
-#figure {
-  position: relative;
-}
-
-#bio-name {
+#girl_image {
   position: absolute;
-  top: 150px;
-  left: 30px;
-}
+  width:70%;  
+  margin-left:50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  z-index: -1;
+  border:solid;
+  border-color:#BE81F7;
+}    
 
-#main-bio {
-  width: 95%;
-}
+#figures {
+  float:left;
+  width:130px;
+  height:130px;
+  z-index: -1;
+  border:solid;
+  border-color:#BE81F7;
+}    
+
+#mont {
+  float:left;
+  width:130px;
+  height:165px;
+  border:solid;
+  border-color:#BE81F7;
+}    
+
+#pics {
+  float:left;
+  width:225px;
+  height:250px;
+}    
+
 
 #contact-info {
   display:inline-block;  
   width : 700px;
+  margin:10 10 10 10;  
+  padding:30 30 30 30;  
     
 }
 
-#bio-image {
-  display:inline-block;  
-  float:left;  
-  width: 275px;
-  height: 275px;
-  margin-right: 20px;
-  border:solid;
-  border-color:red;
-}
-
-#self-desc, #skills {
+#self-desc {
   display:inline-block;  
   text-align : left;
+  padding-top:50px;
+  margin-left:30px;  
   font-size:18px;  
-  width: 100%;
+  width: 70%;
   min-height: 150px;
   line-height:1.5em;  
   overflow:auto;  
 }
 
-#portfolio {
+#portfolio{
+  padding-top:50px;
+  padding-left:50px;
+    
+}   
+#portfolio li {
   clear:left; 
   width:100%;  
   text-align : left;
   font-size:16px;
+  color:black;      
+ 
+}
+
+#portfolio a {
+  clear:left; 
+  width:100%;  
+  text-align : left;
+  font-size:16px;
+  color:red;      
   height : 1.25em;
   
 }
@@ -129,6 +219,49 @@ hr { display: block; height: 1px;
   font-size:16px;
   height : 1.25em;
   
+}
+
+#iceland {
+  width : 90%;
+  height : 90%;
+  z-index:-1;
+  opacity:0.5;  
+  margin-left:25px;  
+  border:solid;
+  border-color:black;
+}
+
+#skills, #hobbies, #experiences, #montessori {
+  padding-top:50px;
+  padding-left:100px;
+    
+}   
+
+.skills_text {
+  position: relative;
+  text-align:left;
+  margin-left:25px;  
+  color:black;
+}
+
+.mont_text p {
+  position: relative;
+  text-align:left;
+  margin-left:100px;
+  margin-right:150px;  
+    
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-right:200px;  
+  color:#5F04B4;
+}
+.top-left li {
+  color:#5F04B4;
 }
 
 
@@ -153,6 +286,13 @@ hr { display: block; height: 1px;
        background-color: #555;
    }
 
+@media screen and (max-width: 1565px) {
+
+.card{
+    width:130px;
+    height:130px;
+}
+}
 
 @media screen and (max-width: 1350px) {
 
@@ -175,34 +315,99 @@ body {
 #self-desc, #skills {
   clear:left;  
   text-align : left;
+  padding-left:70px;  
+  padding-top:20px;  
   font-size:16px;  
-  width: 90%x;
+  width: 70%x;
   float:left; 
   text-overflow: ellipsis;
   line-height:1.5em;  
 }
-
-.container-border {
-      border:solid;  
-      border-width : 5px;  
-      width:95%;  
-      margin-left:5px;    
-      margin-bottom:20px;
-      padding-bottom:20px;
-     
-}
     
-
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 10px;
+.card{
+    width:100px;
+    height:100px;
+}
+#figures {
+  float:left;
+  width:100px;
+  height:100px;
+  z-index: -1;
   border:solid;
-  border-color:red;
-}
+  border-color:#BE81F7;
+}    
 
 
 }
+
+@media (max-width: 1170px) {
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 5%;
+    }
+    
+.card{
+    width:80px;
+    height:80px;
+}
+#figures {
+  float:left;
+  width:80px;
+  height:80px;
+  z-index: -1;
+  border:solid;
+  border-color:#BE81F7;
+}    
+
+
+#iceland {
+  height:600px;
+    
+}
+
+    
+    
+}
+
+@media (max-width: 870px) {
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 5%;
+    font-size:8px;
+}
+
+h1 {
+font-size:32px;
+     }
+
+h3 {
+font-size:26px;
+     }
+      
+#bio-image {
+ padding-left:50px;  
+ width: 45%;
+    
+}
+.card{
+    width:60px;
+    height:60px;
+}
+#figures {
+  float:left;
+  width:60px;
+  height:60px;
+  z-index: -1;
+  border:solid;
+  border-color:#BE81F7;
+}    
+
+#iceland {
+  height:700px;
+    
+}
+
+    
+}
+
 
 
 @media (max-width: 695px) {
@@ -217,6 +422,13 @@ body {
     
 }
 
+h1 {
+font-size:24px;
+     }
+
+h3 {
+font-size:18px;
+     }
 
 .container-border {
     border-width : 5px;  
@@ -229,19 +441,17 @@ body {
    
 }
 
-
+.column2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+    
 li {
   font-size: 12px;
   
 }    
     
-#self-desc {
-  word-break: break-word;
-  white-space:normal;  
-  padding-right:200px;
-  font-size:12px;
-  width:620px;  
-}
 #c-info {
   word-break: break-all;
   white-space:normal;  
@@ -255,14 +465,23 @@ li {
     
     }
     
+#iceland {
+    height:800px;
+    
+}
      
     
-#bio-image {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-  border:solid;
-  border-color:red;
+
+.column {
+    max-width: 80px;
+    display: block;
+    margin-bottom: 20px;
+}    
+
+#skills_text {
+ padding-left:50px;  
+ font-size:12px;
+    
 }
 
 
@@ -280,7 +499,20 @@ li {
     
 }
 
+h1 {
+font-size:24px;
+     }
 
+h3 {
+font-size:16px;
+     }
+
+#bio-image {
+ padding-left:50px;  
+ width: 50%;
+ margin-right: 10px;
+    
+}
 
 .container-border {
     border:none;
@@ -295,13 +527,28 @@ li {
   
 }    
     
-#self-desc {
+#self_desc {
   word-break: break-word;
   white-space:normal;  
+  mrgin-left:75px;  
   padding-right:200px;
   font-size:12px;
   width:620px;  
+  float:left;  
 }
+    
+#girl_image {
+  visibility:hidden;  
+/*  position: absolute;
+  width:60%;  
+  height:50%;
+  padding-left: 50px;
+  padding-top: 10px;
+  z-index: -1;
+  border:solid;
+  border-color:#BE81F7;*/
+}    
+    
 #c-info {
   word-break: break-all;
   white-space:normal;  
@@ -315,172 +562,12 @@ li {
     
     }
     
-     
-    
-#bio-image {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-  border:solid;
-  border-color:red;
-}
-
-
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 
 
-
-/*
-#contact-info {
-    clear:left;
-    width:50%;
-    padding-left:30px;
-      }
-
-.container-border {
-      border:solid;  
-      border-width : 2px;  
-      border-color : red;  
-      width:95%;  
-      padding-bottom: 100%;
-     
-}
-    
-#portfolio {
-  clear:left; 
-  width:90%;  
-  text-align : left;
-  font-size: 12px;
-  height : 1.25em;
-  
-}
-
-#projects {
-  text-align : left;
-  font-size: 12px;
-  height : 1.25em;
-  
-}
-
-
-
-li {
-  font-size: 12px;
-  
-}
-
-
-h1 {
-  font-size: 16px;
-}
-
-
-h3 {
-  font-size: 14px;
-}
-
-    
-.container {
-  display:inline-block;  
-  width:95%;  
-  margin-left:10px;
-  padding-left:10px;
-  margin-right:10px;
-  padding-right:10px;
-    
-}
-
-#main-bio,
-#bio-image {
-  display:inline-block;  
-  float: left;
-  font-size:12px;
-  height : 1.25em;
-  
-}
-
-
-#figure {
-  position: relative;
-}
-
-#bio-name {
-  position: absolute;
-  top: 150px;
-  left: 30px;
-}
-
-
-
-#bio-image {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-  border:solid;
-  border-color:red;
-}
-
-#self-desc, #skills {
-  clear:left;  
-  text-align : left;
-  font-size:12px;  
-  width: 90%x;
-  float:left; 
-  min-height: 150px;
-  line-height:1.5em;  
-}
-
-.tableauPlaceholder {
-    width : 60%;
-    }
-    
-    
-#myBtn {
-   display: none;
-   position: fixed;
-   bottom: 10px;
-   right: 10px;
-   z-index: 99;
-   font-size: 10px;
-   border: none;
-   outline: none;
-   background-color: rgb(108, 168, 207);
-   color: white;
-   cursor: pointer;
-   padding: 15px;
-   border-radius: 4px;
-   }
-
-}
-
-
-@media screen and (max-width: 700px) {
-
-.container-border {
-  border-width : 5px;  
-  min-height:4500px;  
-    
-}
-
-#contact-info {
-    clear:left;
-    width:50%;
-    padding-left:10px;
-      }
-
-#self-desc {
-  clear:left;
-  padding-left:10px;
-  display:inline-block;  
-  text-align : left;
-  font-size:18px;  
-  width: 90%;
-  min-height: 150px;
-  line-height:1.5em;  
-  overflow:auto;  
-}
-
-    
-    
-}*/

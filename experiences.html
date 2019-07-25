@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="UTF-8">
+  <title>Emily Mo's Bio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+	
+  	<!-- Button to go up -->
+	  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+	  <script>
+		  window.onscroll = function() {scrollFunction()};
+  
+		  function scrollFunction() {
+			  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+				  document.getElementById("myBtn").style.display = "block";
+				  } else {
+				  document.getElementById("myBtn").style.display = "none";
+			  }
+	  }
+  
+		  function topFunction() {
+			  document.body.scrollTop = 10;
+			  document.documentElement.scrollTop = 10;
+	  }
+	  </script>
+  
+  
+  <main class="outer-container container-border"  content="width=device-width, initial-scale=1.0">
+    <section id="nav_bar">
+		<nav class="navbar navbar-inverse"  style="background-color:white;">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span> 
+		</button>
+		<a class="navbar-brand" href="#"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar" style="background-color:#F8E0E6;">
+		<ul class="nav navbar-nav">
+			<li class="active" id="nav_button"><a href="index.html"><strong>Home</strong></a></li>
+			<li><a href="skills.html" id="nav_button"><strong>Skills</strong></a></li>
+			<li><a href="experiences.html" id="nav_button"><strong>Experiences</strong></a></li> 
+			<li><a href="projects.html" id="nav_button"><strong>Data Analytics Projects</strong></a></li> 
+			<li><a href="montessori.html" id="nav_button"><strong>Montessori Method</strong></a></li> 
+			<li><a href="hobbies.html" id="nav_button"><strong>Hobbies</strong></a></li> 
+		</ul>
+		</div>
+		</div>
+	</nav>
+	<div class="container" id="experiences">
+    <h1><strong>Experiences</strong></h1>
+	<br>
+	
+        <div class="row skills_text">
+			<img id="iceland" src="static\images\snow.PNG" alt="snow">		
+			<div class="top-left">
+			<br>
+
+            <ul>
+             <li><strong>Migrated/upgraded banking system to Equation Banking System; incorporating interfaces, user training and local development/reporting for Public Bank in Hong Kong, 
+			 Bank of Hawaii, State Bank of India, Delta Bank, ICBC, Delta Bank, Bladex in Panama, and other banks in North and Central Americas, Canada. </strong></li>
+			 <br>
+			 <li><strong>Support banks in Europe, North and Central America.</strong></li>			 
+			 <br>
+             <li><strong>Technical training of bank clients.</strong></li>
+			 <br>
+             <li><strong>Created (developed, tested and installed) ST payments interface from the Iseries legacy systems to Server, converting CHIPS/FEDs/SWIFTs to accounting entries and generating
+			 fees where necessary. Clients include Ocean Bank, BPA, UOB, Arab American Bank, State Bank of India, Delta Bank and BCH. </strong></li>
+			 <br>
+             <li><strong>Developed daily extraction from legacy system to PRIME BSA.</strong></li>
+			  <br>
+             <li><strong>Developed Inventory System and Foreign Exchange and Money Market System for HSBC.</strong></li>
+			  <br>
+             <li><strong>Created a list of periodical Fed reports for banks</strong></li>
+			 <br>
+             <li><strong>Developed Reg CC and Reg DD to interface with Equation Core Banking System</strong></li>
+           </ul>
+        </div>
+        </div>
+    </div>
+
+  </main>
+
+
+</body>
+
+</html>
