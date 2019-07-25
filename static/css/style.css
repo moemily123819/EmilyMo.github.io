@@ -138,6 +138,7 @@ h1,h2,h3,h4,h5,h6,p {
 #girl_image {
   position: absolute;
   width:70%;  
+  margin-bottom:20px;
   margin-left:50px;
   padding-left: 50px;
   padding-top: 10px;
